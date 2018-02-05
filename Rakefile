@@ -21,13 +21,14 @@ task :default => :test
 
 require 'juwelier'
 Juwelier::Tasks.new do |gem|
-  gem.name = 'nihilist'
-  gem.homepage = "https://github.com/aishek/nihilist"
-  gem.license = 'MIT'
-  gem.summary = 'Nihilist simplifies NullObject pattern classes'
+  gem.name        = 'nihilist'
+  gem.homepage    = "https://github.com/aishek/nihilist"
+  gem.license     = 'MIT'
+  gem.summary     = 'Nihilist simplifies NullObject pattern classes'
   gem.description = 'After include Nihilist module all ?-ends methods will return false, all non-!-ends methods will return nil.'
   gem.email       = 'ab@cifronomika.ru'
-  gem.authors = ['Alexandr Borisov']
+  gem.authors     = ['Alexandr Borisov']
+  gem.version     = File.read('VERSION').chomp
 
   if gem.respond_to?(:metadata)
     gem.metadata['allowed_push_host'] = 'https://rubygems.org'
