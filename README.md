@@ -1,6 +1,8 @@
 # Nihilist
 
-[![Gem Version](https://badge.fury.io/rb/nihilist.svg)](https://rubygems.org/gems/localer) [![Build Status](https://travis-ci.org/aishek/nihilist.svg?branch=master)](https://travis-ci.org/aishek/nihilist) ![Dependency Status](https://gemnasium.com/badges/github.com/aishek/nihilist.svg)
+[![Gem Version](https://badge.fury.io/rb/nihilist.svg)](https://rubygems.org/gems/nihilist)
+[![Build Status](https://travis-ci.org/aishek/nihilist.svg?branch=master)](https://travis-ci.org/aishek/nihilist)
+[![Code Climate](https://codeclimate.com/github/aishek/nihilist.svg)](https://codeclimate.com/github/aishek/nihilist)
 
 
 Nihilist is extremely useful for implement Null Object pattern. It allows null object to return `false` for all question-methods, and `nil` for all non-bang-methods without defining them.
