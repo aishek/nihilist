@@ -46,6 +46,6 @@ class NigilistTest < Minitest::Test
   end
 
   def test_undefined_plural_method_with_undersore_at_the_end_return_its_result
-    assert { @guest.planets_.nil? }
+    assert { @guest.monkeys_ == [] }
   end
 end
