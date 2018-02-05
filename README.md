@@ -5,7 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/aishek/nihilist.svg)](https://codeclimate.com/github/aishek/nihilist)
 
 
-Nigilist is extremely useful for implement Null Object pattern. It allows null object to return `false` for all question-methods, and `nil` for all non-bang-methods without defining them.
+Nigilist is extremely useful for implement Null Object pattern. It allows null object to return `false` for all question-methods, `nil` for all non-bang-methods, `[]` for all methods in plural form without defining them.
 
 ## Installation
 
@@ -33,6 +33,7 @@ current_user.admin? # false
 current_user.polite? # true
 current_user.address # nil
 current_user.locale # 'ru'
+current_user.planets # []
 ```
 
 ### Explanation of Null Object pattern
@@ -63,6 +64,7 @@ Gem nigilist is maintained by [Cifronomika](http://cifronomika.ru/).
 Contributors:
 
 * [Alexandr Borisov](https://github.com/aishek)
+* [Ivan Nemytchenko](https://github.com/inem)
 
 ## The gem about one method
 
