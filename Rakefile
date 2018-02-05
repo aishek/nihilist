@@ -21,11 +21,11 @@ task :default => :test
 
 require 'juwelier'
 Juwelier::Tasks.new do |gem|
-  gem.name        = 'nihilist'
+  gem.name        = 'nigilist'
   gem.homepage    = "https://github.com/aishek/nihilist"
   gem.license     = 'MIT'
-  gem.summary     = 'Nihilist simplifies NullObject pattern classes'
-  gem.description = 'After include Nihilist module all ?-ends methods will return false, all non-!-ends methods will return nil.'
+  gem.summary     = 'Nigilist simplifies NullObject pattern classes'
+  gem.description = 'After include Nigilist module all ?-ends methods will return false, all non-!-ends methods will return nil.'
   gem.email       = 'ab@cifronomika.ru'
   gem.authors     = ['Alexandr Borisov']
   gem.version     = File.read('VERSION').chomp

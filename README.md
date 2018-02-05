@@ -1,23 +1,23 @@
-# Nihilist
+# Nigilist
 
 [![Gem Version](https://badge.fury.io/rb/nihilist.svg)](https://rubygems.org/gems/nihilist)
 [![Build Status](https://travis-ci.org/aishek/nihilist.svg?branch=master)](https://travis-ci.org/aishek/nihilist)
 [![Code Climate](https://codeclimate.com/github/aishek/nihilist.svg)](https://codeclimate.com/github/aishek/nihilist)
 
 
-Nihilist is extremely useful for implement Null Object pattern. It allows null object to return `false` for all question-methods, and `nil` for all non-bang-methods without defining them.
+Nigilist is extremely useful for implement Null Object pattern. It allows null object to return `false` for all question-methods, and `nil` for all non-bang-methods without defining them.
 
 ## Installation
 
 ```bash
-gem install nihilist
+gem install nigilist
 ```
 
 ## Usage
 
 ```ruby
 class Guest
-  include Nihilist
+  include Nigilist
 
   def polite?
     true
@@ -54,11 +54,11 @@ So when your project grow and other methods got it place inside `User` model you
 
 ## License
 
-Nihilist is free software, and may be redistributed under the terms specified in the LICENSE.txt file.
+Nigilist is free software, and may be redistributed under the terms specified in the LICENSE.txt file.
 
 ## Credits
 
-Gem nihilist is maintained by [Cifronomika](http://cifronomika.ru/).
+Gem nigilist is maintained by [Cifronomika](http://cifronomika.ru/).
 
 Contributors:
 

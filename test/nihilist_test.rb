@@ -2,10 +2,10 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require 'minitest/power_assert'
 
-require 'nihilist'
+require 'nigilist'
 
 class Guest
-  include Nihilist
+  include Nigilist
 
   def polite?
     true
@@ -16,7 +16,7 @@ class Guest
   end
 end
 
-class NihilistTest < Minitest::Test
+class NigilistTest < Minitest::Test
   def setup
     @guest = Guest.new
   end
