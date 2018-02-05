@@ -36,4 +36,16 @@ class NigilistTest < Minitest::Test
   def test_defined_non_bang_end_method_return_its_result
     assert { @guest.planet == 'Earth' }
   end
+
+  def test_undefined_plural_method_return_its_result
+    assert { @guest.planets == [] }
+  end
+
+  def test_undefined_plural_method_with_undersores_return_its_result
+    assert { @guest.planets_and_monkeys == [] }
+  end
+
+  def test_undefined_plural_method_with_undersore_at_the_end_return_its_result
+    assert { @guest.monkeys_ == [] }
+  end
 end
