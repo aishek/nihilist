@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/nigilist.rb",
+    "nigilist.gemspec",
     "test/nihilist_test.rb"
   ]
   s.homepage = "https://github.com/aishek/nihilist".freeze
