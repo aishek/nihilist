@@ -7,9 +7,9 @@ Nihilist is extremely useful for implement Null Object pattern. It allows null o
 
 ## Installation
 
-   #+BEGIN_SRC bash
-    $ gem install nihilist
-   #+END_SRC
+```bash
+gem install nihilist
+```
 
 ## Usage
 
