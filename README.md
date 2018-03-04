@@ -51,7 +51,7 @@ current_user = current_session.user || Guest.new
 current_user.admin?
 ```
 
-So when your project grow and other methods got it place inside `User` model you have to define same methods in `Guest` model which contains no logic but only return `false` or `nil`.
+So when your project grow and other methods got it place inside `User` model you have to define same methods in `Guest` model which contains no logic but only return `false` or `nil`. In that case Nigilist could be helpful.
 
 ## License
 
@@ -59,7 +59,7 @@ Nigilist is free software, and may be redistributed under the terms specified in
 
 ## Credits
 
-Gem nigilist is maintained by [Cifronomika](http://cifronomika.ru/).
+Gem nigilist is maintained by [Cifronomika](https://cifronomika.com/).
 
 Contributors:
 
