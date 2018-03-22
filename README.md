@@ -26,6 +26,12 @@ class Guest
   def locale
     'ru'.freeze
   end
+
+  # Sometimes it is useful to override associations to return empty relation.
+  # Nigilist simply will return `[]`, so you should do it manually:
+  def orders
+    Order.none
+  end
 end
 
 current_user = Guest.new
@@ -34,6 +40,7 @@ current_user.polite? # true
 current_user.address # nil
 current_user.locale # 'ru'
 current_user.planets # []
+current_user.orders # Order.none
 ```
 
 ### Explanation of Null Object pattern
