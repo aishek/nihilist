@@ -5,7 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/aishek/nihilist.svg)](https://codeclimate.com/github/aishek/nihilist)
 
 
-Nigilist is extremely useful for implement Null Object pattern. It allows null object to return `false` for all question-methods, `nil` for all non-bang-methods, `[]` for all methods in plural form without defining them.
+Nigilist is extremely useful for implement Null Object pattern. It allows null object to return `false` for all question-methods, `nil` for all non-bang-methods, `[]` for all methods in plural form (and in Ruby on Rails null-relation for same name ActiveRecord model) without defining them.
 
 ## Installation
 
@@ -16,6 +16,9 @@ gem install nigilist
 ## Usage
 
 ```ruby
+class Order < ActiveRecord::Base
+end
+
 class Guest
   include Nigilist
 
@@ -24,23 +27,17 @@ class Guest
   end
 
   def locale
-    'ru'.freeze
-  end
-
-  # Sometimes it is useful to override associations to return empty relation.
-  # Nigilist simply will return `[]`, so you should do it manually:
-  def orders
-    Order.none
+    'ru'
   end
 end
 
 current_user = Guest.new
-current_user.admin? # false
-current_user.polite? # true
-current_user.address # nil
-current_user.locale # 'ru'
-current_user.planets # []
-current_user.orders # Order.none
+current_user.admin?  # false — for all question methods
+current_user.polite? # true — becase it is explicit defined
+current_user.orders  # Order.none — for all plural methods if same singular name ActiveRecord models exists
+current_user.planets # [] — for all plural methods without if singular name ActiveRecord models doesn't exists
+current_user.address # nil — for all non question, non plural and non bang methods
+current_user.locale  # 'ru' — becase it is explicit defined
 ```
 
 ### Explanation of Null Object pattern
@@ -58,11 +55,11 @@ current_user = current_session.user || Guest.new
 current_user.admin?
 ```
 
-So when your project grow and other methods got it place inside `User` model you have to define same methods in `Guest` model which contains no logic but only return `false` or `nil`. In that case Nigilist could be helpful.
+So when your project grows and other methods got it place inside `User` model you have to define same methods in `Guest` model which contains no logic but only return `false` or `nil`. In that case Nigilist could be helpful.
 
 ## License
 
-Nigilist is free software, and may be redistributed under the terms specified in the LICENSE.txt file.
+Nigilist is free software, and may be redistributed under the MIT License.
 
 ## Credits
 
