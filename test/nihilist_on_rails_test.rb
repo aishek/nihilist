@@ -49,8 +49,8 @@ class NigilistRailsTest < Minitest::Test
   def teardown
     Object.send(:remove_const, 'Rails')
 
-    String.remove_method :singularize
-    String.remove_method :camelize
-    String.remove_method :safe_constantize
+    String.send(:remove_method, :singularize)
+    String.send(:remove_method, :camelize)
+    String.send(:remove_method, :safe_constantize)
   end
 end
