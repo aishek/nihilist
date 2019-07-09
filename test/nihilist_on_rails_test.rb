@@ -18,9 +18,9 @@ class NigilistRailsTest < Minitest::Test
   def setup
     Object.const_set('Rails', Module.new)
 
-    String.define_method :singularize do self[0..-2] end
-    String.define_method :camelize do capitalize end
-    String.define_method :safe_constantize do
+    String.send(:define_method, :singularize) do self[0..-2] end
+    String.send(:define_method, :camelize) do capitalize end
+    String.send(:define_method, :safe_constantize) do
       if self == 'Post'
         return Class.new do
           def self.none
