@@ -69,7 +69,7 @@ class NigilistTest < Minitest::Test
     assert { @guest.respond_to?(:intresting?) }
   end
 
-  def test_respond_to_question_method
+  def test_respond_to_regular_method
     assert { @guest.respond_to?(:mess) }
   end
 
