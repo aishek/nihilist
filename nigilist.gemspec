@@ -6,13 +6,13 @@
 
 Gem::Specification.new do |s|
   s.name = "nigilist".freeze
-  s.version = "1.0.0"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.metadata = { "allowed_push_host" => "https://rubygems.org" } if s.respond_to? :metadata=
   s.require_paths = ["lib".freeze]
   s.authors = ["Alexandr Borisov".freeze]
-  s.date = "2018-02-05"
+  s.date = "2019-07-10"
   s.description = "After include Nigilist module all ?-ends methods will return false, all non-!-ends methods will return nil.".freeze
   s.email = "ab@cifronomika.ru".freeze
   s.extra_rdoc_files = [
@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".travis.yml",
+    "CHANGELOG.md",
     "Gemfile",
     "Gemfile.lock",
     "LISENCE.txt",
@@ -28,11 +29,12 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/nigilist.rb",
     "nigilist.gemspec",
+    "test/nihilist_on_rails_test.rb",
     "test/nihilist_test.rb"
   ]
   s.homepage = "https://github.com/aishek/nihilist".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "2.7.3".freeze
+  s.rubygems_version = "3.0.3".freeze
   s.summary = "Nigilist simplifies NullObject pattern classes".freeze
 
   if s.respond_to? :specification_version then
