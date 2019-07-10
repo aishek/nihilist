@@ -34,8 +34,8 @@ end
 current_user = Guest.new
 current_user.admin?  # false — for all question methods
 current_user.polite? # true — becase it is explicit defined
-current_user.orders  # Order.none — for all plural methods if same singular name ActiveRecord models exists
-current_user.planets # [] — for all plural methods without if singular name ActiveRecord models doesn't exists
+current_user.orders  # Order.none — for all plural methods because same singular name ActiveRecord model exists
+current_user.planets # [] — for all plural methods without because singular name ActiveRecord model doesn't exists
 current_user.address # nil — for all non question, non plural and non bang methods
 current_user.locale  # 'ru' — becase it is explicit defined
 ```
