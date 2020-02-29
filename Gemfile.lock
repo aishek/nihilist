@@ -52,7 +52,7 @@ GEM
     psych (3.0.2)
     public_suffix (3.0.1)
     rack (2.0.4)
-    rake (12.3.0)
+    rake (12.3.3)
     rdoc (6.0.1)
     semver2 (3.4.2)
     thread_safe (0.3.6)
