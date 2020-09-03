@@ -63,7 +63,9 @@ Nigilist is free software, and may be redistributed under the MIT License.
 
 ## Credits
 
-Gem nigilist is maintained by [Cifronomika](https://cifronomika.com/).
+Sponsored by [JetRockets](http://www.jetrockets.pro).
+
+<img src="https://media.jetrockets.pro/jetrockets-white.svg" width="250" alt="JetRockets">
 
 Contributors:
 
