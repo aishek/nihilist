@@ -61,13 +61,7 @@ So when your project grows and other methods got it place inside `User` model yo
 
 Nigilist is free software, and may be redistributed under the MIT License.
 
-## Credits
-
-Sponsored by [JetRockets](http://www.jetrockets.pro).
-
-<img src="https://media.jetrockets.pro/jetrockets-white.svg" width="250" alt="JetRockets">
-
-Contributors:
+## Contributors
 
 * [Alexandr Borisov](https://github.com/aishek)
 * [Ivan Nemytchenko](https://github.com/inem)
